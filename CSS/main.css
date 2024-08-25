@@ -1,0 +1,280 @@
+/*Start Global Rules*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Noto Kufi Arabic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.noto-kufi-arabic-uniquifier{
+  font-family: "Noto Kufi Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+:root{
+    --text-color: #fff;
+    --icon-color: #0a0a0a;
+    --heading-color: #000;
+    --border-color: #f1f1f1;
+    --color-three: #feee00;
+    --background-color: #f6f6f6;
+}
+/*End Global Rules*/
+/*Small*/
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+}
+/*medium*/
+@media (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+/*Large*/
+@media (min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+/*End Global Rules*/
+/*Start contact-us*/
+.contact-us .container{
+    padding: 15px;
+}
+.contact-us .container .text-content{
+    text-align: center;
+}
+.contact-us .container .text-content h1{
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+.contact-us .container .text-content .text-one p{
+    color: var(--heading-color);
+    font-size: 17px;
+    font-weight: 200;
+    line-height: 1.6;
+}
+.contact-us .container .text-content .text-one div,
+.contact-us .container .text-content .text-two div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
+}
+@media (max-width: 600px){
+    .contact-us .container .text-content .text-one div,
+    .contact-us .container .text-content .text-two div{
+        flex-direction: column;
+    }
+}
+.contact-us .container .text-content .text-one div a,
+.contact-us .container .text-content .text-two div a{
+    text-decoration: none;
+    color: var(--heading-color);
+    font-size: 17px;
+    font-weight: 600;
+}
+.contact-us .container .text-content h2{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--heading-color);
+    margin-bottom: 20px;
+}
+.contact-us .container .text-content .text-two p,
+.contact-us .container .text-content .text-three{
+    color: var(--heading-color);
+    font-size: 17px;
+    font-weight: 200;
+    line-height: 1.6;
+}
+.contact-us .container .text-content .text-two div p{
+    margin-left: 5px;
+}
+.contact-us .container .text-content .text-three{
+    margin-bottom: 20px;
+}
+.contact-us .container .contact-content{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.contact-us .container .contact-content .content-address{
+    margin-left: 40px;
+    min-width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-us .container .contact-content .content-address .col{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-bottom: 15px;
+}
+.contact-us .container .contact-content .content-address .col i{
+    font-size: 22px;
+    color: var(--icon-color);
+    margin-left: 15px;
+}
+.contact-us .container .contact-content .content-address .col .text{
+   width: 100%;
+   text-align: end;
+}
+.contact-us .container .contact-content .content-address .col .text h4{
+    font-size: 19px;
+    font-weight: 500;
+    color: var(--heading-color);
+    margin-bottom: 10px;
+}
+.contact-us .container .contact-content .content-address .col .text p{
+    color: var(--heading-color);
+    font-size: 17px;
+    font-weight: 200;
+    line-height: 1.6;
+}
+.contact-us .container .contact-content .content-inputs{
+    display: flex;
+    flex-direction: column;
+    min-width: 40%;
+}
+.contact-us .container .contact-content .content-inputs .inputs-name,
+.contact-us .container .contact-content .content-inputs .inputs-email{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: end;
+    margin-bottom: 20px;
+    width: 100%;
+}
+@media (max-width: 768px){
+    .contact-us .container .contact-content .content-inputs .inputs-name,
+    .contact-us .container .contact-content .content-inputs .inputs-email{
+        flex-direction: column;
+    }
+    .contact-us .container .contact-content .content-inputs .inputs-name input,
+    .contact-us .container .contact-content .content-inputs .inputs-email input{
+        margin-bottom: 15px;
+    }
+    .contact-us .container .contact-content{
+        flex-direction: column;
+    }
+    .contact-us .container .contact-content .content-address{
+        text-align: center;
+        margin-left: 15px;
+    }
+    .contact-us .container .contact-content .content-address .col{
+        flex-direction: column;
+    }
+    .contact-us .container .contact-content .content-address .col .text{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .contact-us .container .contact-content .content-address .col i{
+        margin-left: 0;
+    }
+}
+.contact-us .container .contact-content .content-inputs .inputs-name .input-one,
+.contact-us .container .contact-content .content-inputs .inputs-name .input-two,
+.contact-us .container .contact-content .content-inputs .inputs-email .input-three,
+.contact-us .container .contact-content .content-inputs .inputs-email .input-four{
+    margin-left: 20px;
+}
+.contact-us .container .contact-content .content-inputs .inputs-name .input-one .text,
+.contact-us .container .contact-content .content-inputs .inputs-name .input-two .text,
+.contact-us .container .contact-content .content-inputs .inputs-email .input-three .text,
+.contact-us .container .contact-content .content-inputs .inputs-email .input-four .text{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+.contact-us .container .contact-content .content-inputs .inputs-name .input-one .text p,
+.contact-us .container .contact-content .content-inputs .inputs-name .input-two .text p,
+.contact-us .container .contact-content .content-inputs .inputs-email .input-three .text p,
+.contact-us .container .contact-content .content-inputs .inputs-email .input-four .text p{
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--heading-color);
+    margin-bottom: 15px;
+}
+.contact-us .container .contact-content .content-inputs .inputs-name .input-one input,
+.contact-us .container .contact-content .content-inputs .inputs-name .input-two input,
+.contact-us .container .contact-content .content-inputs .inputs-email .input-three input,
+.contact-us .container .contact-content .content-inputs .inputs-email .input-four input{
+    padding: 10px;
+    border: 1px solid var(--heading-color);
+    caret-color: #ddd;
+    width: 100%;
+}
+.contact-us .container .contact-content .content-inputs .inputs-name .input-one input::placeholder,
+.contact-us .container .contact-content .content-inputs .inputs-name .input-two input::placeholder,
+.contact-us .container .contact-content .content-inputs .inputs-email .input-three input::placeholder,
+.contact-us .container .contact-content .content-inputs .inputs-email .input-four input::placeholder,
+.contact-us .container .contact-content .content-inputs .text-areas textarea::placeholder{
+    text-transform: capitalize;
+    color: var(--heading-color);
+    font-size: 17px;
+    font-weight: 200;
+    padding-left: 5px;
+}
+.contact-us .container .contact-content .content-inputs .inputs-name .input-one input:focus,
+.contact-us .container .contact-content .content-inputs .inputs-name .input-two input:focus,
+.contact-us .container .contact-content .content-inputs .inputs-email .input-three input:focus,
+.contact-us .container .contact-content .content-inputs .inputs-email .input-four input:focus,
+.contact-us .container .contact-content .content-inputs .text-areas textarea:focus{
+    outline: none;
+}
+.contact-us .container .contact-content .content-inputs .text-areas{
+    margin-left: 20px;
+}
+.contact-us .container .contact-content .content-inputs .text-areas .text{
+    text-align: end;
+}
+.contact-us .container .contact-content .content-inputs .text-areas .text p{
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--heading-color);
+    margin-bottom: 15px;
+}
+.contact-us .container .contact-content .content-inputs .text-areas textarea{
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    border: 1px solid var(--heading-color);
+    caret-color: #ddd;
+}
+.contact-us .container .contact-content .content-inputs .submit{
+    margin-left: auto;
+    padding: 5px 30px;
+    font-size: 17px;
+    background-color: var(--heading-color);
+    color: white;
+    border-color: transparent;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+/*End contact-us*/
